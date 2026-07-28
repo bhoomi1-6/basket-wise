@@ -1,0 +1,1841 @@
+[
+  {
+    "id": "creams-0",
+    "name": "Elmlea Double",
+    "brand": "Elmlea",
+    "category": "Dairy",
+    "quantity": "270ml",
+    "allergens": [
+      "milk",
+      "soybeans"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Tesco",
+    "price": 1.6,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "creams-1",
+    "name": "Cornish Clotted Cream",
+    "brand": "Kelly's",
+    "category": "Dairy",
+    "quantity": "950ml",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "no artificial colors",
+      "no artificial colours or flavours",
+      "no artificial flavors",
+      "no artificial preservatives"
+    ],
+    "nutriScore": "D",
+    "retailer": "Sainsbury's",
+    "price": 5.5,
+    "rating": 4.6,
+    "offer": null
+  },
+  {
+    "id": "creams-2",
+    "name": "Double Cream",
+    "brand": "Tesco",
+    "category": "Dairy",
+    "quantity": "",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "UNKNOWN",
+    "retailer": "Tesco",
+    "price": 1.4,
+    "rating": 4.1,
+    "offer": null
+  },
+  {
+    "id": "creams-3",
+    "name": "La crème des chefs ferme et onctueuse gastronomique",
+    "brand": "President",
+    "category": "Dairy",
+    "quantity": "250 g (241 ml)",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "fr:triman",
+      "metal recycles forever"
+    ],
+    "nutriScore": "E",
+    "retailer": "Sainsbury's",
+    "price": 1.95,
+    "rating": 3.9,
+    "offer": null
+  },
+  {
+    "id": "creams-4",
+    "name": "CRÈME FRAÎCHE",
+    "brand": "TESCO",
+    "category": "Dairy",
+    "quantity": "300 ml",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "D",
+    "retailer": "Tesco",
+    "price": 1.3,
+    "rating": 4.0,
+    "offer": null
+  },
+  {
+    "id": "creams-5",
+    "name": "FRESH BRITISH CRÈME FRAÎCHE",
+    "brand": "COWBELLE",
+    "category": "Dairy",
+    "quantity": "",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "D",
+    "retailer": "Aldi",
+    "price": 0.89,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "creams-6",
+    "name": "Sour Cream & Chive Dip",
+    "brand": "Sainsbury's",
+    "category": "Dairy",
+    "quantity": "1 x 200g",
+    "allergens": [
+      "eggs",
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Sainsbury's",
+    "price": 1.5,
+    "rating": 4.3,
+    "offer": "2 for £2.50"
+  },
+  {
+    "id": "creams-7",
+    "name": "Half Fat Crème Fraîche",
+    "brand": "Yeo Valley",
+    "category": "Dairy",
+    "quantity": "200g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "contains milk",
+      "eu organic",
+      "gb org 05",
+      "no added sugar",
+      "organic",
+      "soil association organic"
+    ],
+    "nutriScore": "D",
+    "retailer": "Aldi",
+    "price": 1.85,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "creams-8",
+    "name": "Crème Fraîche",
+    "brand": "Tesco",
+    "category": "Dairy",
+    "quantity": "300 ml e",
+    "allergens": [
+      "Crème",
+      "lait",
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "low fat",
+      "low or no fat",
+      "reduced fat"
+    ],
+    "nutriScore": "D",
+    "retailer": "Tesco",
+    "price": 1.35,
+    "rating": 4.0,
+    "offer": null
+  },
+  {
+    "id": "milks-0",
+    "name": "SEMI SKIMMED MILK",
+    "brand": "TESCO",
+    "category": "Dairy",
+    "quantity": "2.272l",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "assured food standards"
+    ],
+    "nutriScore": "B",
+    "retailer": "Tesco",
+    "price": 1.65,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "milks-1",
+    "name": "Whole Milk",
+    "brand": "Tesco",
+    "category": "Dairy",
+    "quantity": "4 pints",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "contains milk",
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Tesco",
+    "price": 1.65,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "milks-2",
+    "name": "SEMI SKIMMED 1.8% FAT MILK",
+    "brand": "Sainsbury's",
+    "category": "Dairy",
+    "quantity": "4pt",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "B",
+    "retailer": "Sainsbury's",
+    "price": 1.65,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "milks-3",
+    "name": "LactoFree Semi Skimmed Milk Drink 1 Litre",
+    "brand": "Arla",
+    "category": "Dairy",
+    "quantity": "1000",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "no lactose",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 1.9,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "milks-4",
+    "name": "Graham's Gold Smooth",
+    "brand": "Graham's",
+    "category": "Dairy",
+    "quantity": "1l",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "green dot"
+    ],
+    "nutriScore": "C",
+    "retailer": "Aldi",
+    "price": 1.45,
+    "rating": 4.1,
+    "offer": null
+  },
+  {
+    "id": "milks-5",
+    "name": "Semi Skimmed Milk",
+    "brand": "Tesco",
+    "category": "Dairy",
+    "quantity": "1.136L",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "assured food standards"
+    ],
+    "nutriScore": "B",
+    "retailer": "Tesco",
+    "price": 0.95,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "milks-6",
+    "name": "Semi-Skimmed Milk",
+    "brand": "Arla Cravendale",
+    "category": "Dairy",
+    "quantity": "2 l",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "B",
+    "retailer": "Sainsbury's",
+    "price": 2.2,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "milks-7",
+    "name": "Semi-Skimmed Milk",
+    "brand": "Cowbelle",
+    "category": "Dairy",
+    "quantity": "2.272 l",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [
+      "milk"
+    ],
+    "dietaryLabels": [],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 1.55,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "milks-8",
+    "name": "Lemon & Pepper Fish Fillets",
+    "brand": "Young's",
+    "category": "Dairy",
+    "quantity": "",
+    "allergens": [
+      "fish",
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "D",
+    "retailer": "Sainsbury's",
+    "price": 3.2,
+    "rating": 4.0,
+    "offer": null
+  },
+  {
+    "id": "cheeses-0",
+    "name": "Full fat soft cheese",
+    "brand": "PHILADELPHIA",
+    "category": "Dairy",
+    "quantity": "165g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "no preservatives"
+    ],
+    "nutriScore": "D",
+    "retailer": "Tesco",
+    "price": 1.9,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "cheeses-1",
+    "name": "PHILADELPHIA ORIGINAL",
+    "brand": "PHILADELPHIA",
+    "category": "Dairy",
+    "quantity": "",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Sainsbury's",
+    "price": 2.1,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "cheeses-2",
+    "name": "FULL FAT SOFT CHEESE",
+    "brand": "TESCO",
+    "category": "Dairy",
+    "quantity": "200g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [
+      "milk"
+    ],
+    "dietaryLabels": [
+      "contains milk",
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Tesco",
+    "price": 1.6,
+    "rating": 4.1,
+    "offer": "2 for £3"
+  },
+  {
+    "id": "cheeses-3",
+    "name": "Our Mature Cheddar",
+    "brand": "Cathedral City",
+    "category": "Dairy",
+    "quantity": "350 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "assured food standards",
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Aldi",
+    "price": 3.2,
+    "rating": 4.6,
+    "offer": null
+  },
+  {
+    "id": "cheeses-4",
+    "name": "Mini Original",
+    "brand": "Babybel",
+    "category": "Dairy",
+    "quantity": "10 x 20g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "no gluten",
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Sainsbury's",
+    "price": 2.75,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "cheeses-5",
+    "name": "Cheestrings",
+    "brand": "Strings & Things",
+    "category": "Dairy",
+    "quantity": "160g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "contains milk",
+      "high in calcium",
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Aldi",
+    "price": 2.0,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "cheeses-6",
+    "name": "Natural Cottage Cheese",
+    "brand": "Milbona",
+    "category": "Dairy",
+    "quantity": "300 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [
+      "none"
+    ],
+    "dietaryLabels": [
+      "es:Recicla amarillo",
+      "high proteins",
+      "nutriscore",
+      "nutriscore grade b",
+      "pt:Ecoponto amarelo",
+      "source of proteins",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 1.35,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "cheeses-7",
+    "name": "Full Fat Soft Cheese",
+    "brand": "Sainsbury's",
+    "category": "Dairy",
+    "quantity": "300 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "D",
+    "retailer": "Sainsbury's",
+    "price": 1.85,
+    "rating": 4.0,
+    "offer": null
+  },
+  {
+    "id": "cheeses-8",
+    "name": "Soft Cheese Original",
+    "brand": "Emporium",
+    "category": "Dairy",
+    "quantity": "200g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "D",
+    "retailer": "Aldi",
+    "price": 1.1,
+    "rating": 3.8,
+    "offer": null
+  },
+  {
+    "id": "pastas-0",
+    "name": "Rana spinach and ricotta fresh tortelloni",
+    "brand": "Rana",
+    "category": "Ambient",
+    "quantity": "250 g",
+    "allergens": [
+      "eggs",
+      "gluten",
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Sainsbury's",
+    "price": 2.75,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "pastas-1",
+    "name": "Medium Egg Noodles",
+    "brand": "Sharwood's",
+    "category": "Ambient",
+    "quantity": "226g",
+    "allergens": [
+      "eggs",
+      "gluten"
+    ],
+    "traces": [
+      "milk",
+      "sesame seeds",
+      "soybeans"
+    ],
+    "dietaryLabels": [
+      "green dot",
+      "no artificial colors",
+      "no preservatives",
+      "vegetarian"
+    ],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 1.55,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "pastas-2",
+    "name": "Chicken & Mushroom Flavour",
+    "brand": "POT noodle",
+    "category": "Ambient",
+    "quantity": "90 g",
+    "allergens": [
+      "gluten",
+      "milk",
+      "mustard",
+      "soybeans"
+    ],
+    "traces": [
+      "\u001fcelery\u001f  \u001feggs\u001f  \u001fmustard\u001f"
+    ],
+    "dietaryLabels": [
+      "Haram",
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Tesco",
+    "price": 0.95,
+    "rating": 3.9,
+    "offer": "3 for £2.50"
+  },
+  {
+    "id": "pastas-3",
+    "name": "Spinach and Ricotta Tortelloni",
+    "brand": "Tesco",
+    "category": "Ambient",
+    "quantity": "300 g",
+    "allergens": [
+      "eggs",
+      "gluten",
+      "milk"
+    ],
+    "traces": [
+      "soybeans"
+    ],
+    "dietaryLabels": [
+      "made in italy",
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Tesco",
+    "price": 2.5,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "pastas-4",
+    "name": "Chicken Noodles",
+    "brand": "Batchelors",
+    "category": "Ambient",
+    "quantity": "90g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "green dot",
+      "vegetarian"
+    ],
+    "nutriScore": "UNKNOWN",
+    "retailer": "Aldi",
+    "price": 0.65,
+    "rating": 3.8,
+    "offer": null
+  },
+  {
+    "id": "pastas-5",
+    "name": "Spinach & Ricotta Tortelloni",
+    "brand": "Sainsbury's",
+    "category": "Ambient",
+    "quantity": "300g",
+    "allergens": [
+      "eggs",
+      "gluten",
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "B",
+    "retailer": "Sainsbury's",
+    "price": 2.6,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "pastas-6",
+    "name": "WHOLEWHEAT FUSILLI",
+    "brand": "TESCO",
+    "category": "Ambient",
+    "quantity": "",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "made in italy",
+      "source of fibre",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 1.1,
+    "rating": 4.1,
+    "offer": null
+  },
+  {
+    "id": "pastas-7",
+    "name": "Fusilli Integrali",
+    "brand": "Combino",
+    "category": "Ambient",
+    "quantity": "500g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Aldi",
+    "price": 0.85,
+    "rating": 4.0,
+    "offer": null
+  },
+  {
+    "id": "pastas-8",
+    "name": "Rice noodles Satay flavour",
+    "brand": "Itsu",
+    "category": "Ambient",
+    "quantity": "64g",
+    "allergens": [
+      "sesame seeds",
+      "soybeans"
+    ],
+    "traces": [
+      "celery",
+      "mustard"
+    ],
+    "dietaryLabels": [
+      "low fat",
+      "low or no fat",
+      "low or no sugar",
+      "low sugar",
+      "no gluten",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Sainsbury's",
+    "price": 1.75,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "rices-0",
+    "name": "Spanish Style Grains",
+    "brand": "Merchant Gourmet",
+    "category": "Ambient",
+    "quantity": "250g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "C",
+    "retailer": "Sainsbury's",
+    "price": 2.2,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "rices-1",
+    "name": "Basmati & Wild Rice",
+    "brand": "Tilda",
+    "category": "Ambient",
+    "quantity": "250 g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [
+      "no gluten",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Tesco",
+    "price": 1.9,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "rices-2",
+    "name": "SPANISH STYLE GRAINS",
+    "brand": "WORLDWIDE FOODS",
+    "category": "Ambient",
+    "quantity": "250g",
+    "allergens": [
+      "gluten",
+      "mustard"
+    ],
+    "traces": [
+      "Shelfish",
+      "celery",
+      "fish",
+      "milk",
+      "mustard",
+      "nuts",
+      "soybeans"
+    ],
+    "dietaryLabels": [
+      "low saturated fat",
+      "no artificial colors",
+      "no artificial colours and preservatives",
+      "no artificial preservatives"
+    ],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 1.1,
+    "rating": 3.9,
+    "offer": null
+  },
+  {
+    "id": "rices-3",
+    "name": "Classic Wholegrain Rice",
+    "brand": "Worldwide Foods",
+    "category": "Ambient",
+    "quantity": "250g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [
+      "Less packaging",
+      "new recipe",
+      "no artificial colors",
+      "no artificial colours and preservatives",
+      "no artificial colours or flavours",
+      "no artificial flavors",
+      "no artificial preservatives",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 0.95,
+    "rating": 3.8,
+    "offer": null
+  },
+  {
+    "id": "rices-4",
+    "name": "Golden Vegetable",
+    "brand": "Ben's Original",
+    "category": "Ambient",
+    "quantity": "220 g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [
+      "green dot"
+    ],
+    "nutriScore": "B",
+    "retailer": "Tesco",
+    "price": 1.4,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "rices-5",
+    "name": "Brown basmati",
+    "brand": "Lidl",
+    "category": "Ambient",
+    "quantity": "",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "B",
+    "retailer": "Sainsbury's",
+    "price": 1.3,
+    "rating": 4.1,
+    "offer": null
+  },
+  {
+    "id": "rices-6",
+    "name": "Brown, Red & Wild Rice",
+    "brand": "Merchant Gourmet",
+    "category": "Ambient",
+    "quantity": "250",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [
+      "vegan",
+      "vegetarian",
+      "vegetarian society approved",
+      "vegetarian society approved vegan"
+    ],
+    "nutriScore": "B",
+    "retailer": "Sainsbury's",
+    "price": 2.3,
+    "rating": 4.5,
+    "offer": "Save 15%"
+  },
+  {
+    "id": "rices-7",
+    "name": "Wholegrain Rice",
+    "brand": "TESCO",
+    "category": "Ambient",
+    "quantity": "250 g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Tesco",
+    "price": 0.85,
+    "rating": 4.0,
+    "offer": null
+  },
+  {
+    "id": "rices-8",
+    "name": "Microwave Wholegrain Rice",
+    "brand": "Taste of",
+    "category": "Ambient",
+    "quantity": "250 g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 0.75,
+    "rating": 3.9,
+    "offer": null
+  },
+  {
+    "id": "chickens-0",
+    "name": "chicken dippers",
+    "brand": "Birds Eye",
+    "category": "Meat",
+    "quantity": "697g",
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "traces": [
+      "eggs"
+    ],
+    "dietaryLabels": [
+      "contains milk",
+      "do not freeze again",
+      "no artificial colors",
+      "no artificial colours or flavours",
+      "no artificial flavors",
+      "no artificial preservatives"
+    ],
+    "nutriScore": "C",
+    "retailer": "Tesco",
+    "price": 4.5,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "chickens-1",
+    "name": "Roast Chicken Breast",
+    "brand": "Tesco finest",
+    "category": "Meat",
+    "quantity": "120 g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 2.0,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "chickens-2",
+    "name": "Chargrilled British Chicken Breast Slices",
+    "brand": "Sainsbury's",
+    "category": "Meat",
+    "quantity": "160g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Sainsbury's",
+    "price": 2.25,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "chickens-3",
+    "name": "ROAST CHICKEN",
+    "brand": "TESCO",
+    "category": "Meat",
+    "quantity": "120 g",
+    "allergens": [
+      "chicken"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 1.75,
+    "rating": 4.1,
+    "offer": "2 for £3"
+  },
+  {
+    "id": "chickens-4",
+    "name": "Sliced Chicken",
+    "brand": "Eastman's Deli Foods",
+    "category": "Meat",
+    "quantity": "240 g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Aldi",
+    "price": 1.65,
+    "rating": 3.9,
+    "offer": null
+  },
+  {
+    "id": "chickens-5",
+    "name": "Crunchy southern fried chicken",
+    "brand": "Birds Eye",
+    "category": "Meat",
+    "quantity": "180g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "C",
+    "retailer": "Sainsbury's",
+    "price": 2.75,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "chickens-6",
+    "name": "ROAST CHICKEN SLICES",
+    "brand": "TESCO",
+    "category": "Meat",
+    "quantity": "180g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [
+      "high proteins",
+      "source of proteins"
+    ],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 2.1,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "chickens-7",
+    "name": "Chicken Dippers",
+    "brand": "Birds Eye",
+    "category": "Meat",
+    "quantity": "403g",
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "traces": [
+      "eggs"
+    ],
+    "dietaryLabels": [
+      "no artificial colors",
+      "no artificial colours and preservatives",
+      "no artificial preservatives"
+    ],
+    "nutriScore": "C",
+    "retailer": "Aldi",
+    "price": 3.2,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "chickens-8",
+    "name": "FLAMEGRILLED ROAST CHICKEN BREAST SLICES",
+    "brand": "TESCO",
+    "category": "Meat",
+    "quantity": "160 g",
+    "allergens": [],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 2.3,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "butters-0",
+    "name": "Spreadable",
+    "brand": "Lurpak",
+    "category": "Dairy",
+    "quantity": "400g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegetarian"
+    ],
+    "nutriScore": "E",
+    "retailer": "Tesco",
+    "price": 3.2,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "butters-1",
+    "name": "lurpak plant based",
+    "brand": "Lurpak",
+    "category": "Dairy",
+    "quantity": "400g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Sainsbury's",
+    "price": 3.5,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "butters-2",
+    "name": "Lurpak Lighter",
+    "brand": "Lurpak",
+    "category": "Dairy",
+    "quantity": "400g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "D",
+    "retailer": "Aldi",
+    "price": 3.0,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "butters-3",
+    "name": "Slightly Salted Spreadable Butter",
+    "brand": "Nordpak",
+    "category": "Dairy",
+    "quantity": "500 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "no hydrogenated fats",
+      "vegetarian"
+    ],
+    "nutriScore": "D",
+    "retailer": "Aldi",
+    "price": 1.95,
+    "rating": 3.9,
+    "offer": null
+  },
+  {
+    "id": "butters-4",
+    "name": "SPREADABLE SLIGHTLY SALTED",
+    "brand": "DANPAK",
+    "category": "Dairy",
+    "quantity": "500 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "E",
+    "retailer": "Aldi",
+    "price": 1.85,
+    "rating": 3.8,
+    "offer": null
+  },
+  {
+    "id": "butters-5",
+    "name": "Anchor Spreadable Butter",
+    "brand": "Anchor",
+    "category": "Dairy",
+    "quantity": "400g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "E",
+    "retailer": "Tesco",
+    "price": 2.6,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "butters-6",
+    "name": "Lurpak Spreadable Slightly Salted",
+    "brand": "Lurpak",
+    "category": "Dairy",
+    "quantity": "",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "natural product"
+    ],
+    "nutriScore": "E",
+    "retailer": "Sainsbury's",
+    "price": 3.3,
+    "rating": 4.5,
+    "offer": "Clubcard Price £2.75"
+  },
+  {
+    "id": "butters-7",
+    "name": "BUTTER",
+    "brand": "LURPAK",
+    "category": "Dairy",
+    "quantity": "200g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "contains milk"
+    ],
+    "nutriScore": "E",
+    "retailer": "Tesco",
+    "price": 2.1,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "butters-8",
+    "name": "SALTED BUTTER",
+    "brand": "TESCO",
+    "category": "Dairy",
+    "quantity": "250g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "pure butter"
+    ],
+    "nutriScore": "E",
+    "retailer": "Tesco",
+    "price": 1.75,
+    "rating": 4.1,
+    "offer": null
+  },
+  {
+    "id": "breads-0",
+    "name": "White Ciabattin",
+    "brand": "Jason's Sourdough",
+    "category": "Bakery",
+    "quantity": "580 g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "Great Taste",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Sainsbury's",
+    "price": 1.8,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "breads-1",
+    "name": "Sourdough Grains & Seeds",
+    "brand": "Jason's",
+    "category": "Bakery",
+    "quantity": "580 g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "A",
+    "retailer": "Sainsbury's",
+    "price": 1.9,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "breads-2",
+    "name": "Proper Sourdough",
+    "brand": "Jason's",
+    "category": "Bakery",
+    "quantity": "450 g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "no additives",
+      "no artificial flavors",
+      "no artificial preservatives",
+      "no preservatives",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 1.6,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "breads-3",
+    "name": "Seeded Sourdough Bread",
+    "brand": "Specially Selected",
+    "category": "Bakery",
+    "quantity": "500g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegetarian"
+    ],
+    "nutriScore": "A",
+    "retailer": "Aldi",
+    "price": 1.55,
+    "rating": 4.6,
+    "offer": null
+  },
+  {
+    "id": "breads-4",
+    "name": "JASON'S SOURDOUGH",
+    "brand": "JASON'S SOURDOUGH",
+    "category": "Bakery",
+    "quantity": "450 g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "no additives",
+      "no preservatives"
+    ],
+    "nutriScore": "A",
+    "retailer": "Sainsbury's",
+    "price": 1.7,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "breads-5",
+    "name": "Everyday White Rolls",
+    "brand": "Jason's",
+    "category": "Bakery",
+    "quantity": "320g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "No artificial flavourings or preservatives",
+      "Suitable for freezing",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "B",
+    "retailer": "Aldi",
+    "price": 0.85,
+    "rating": 3.9,
+    "offer": "2 for £1.50"
+  },
+  {
+    "id": "breads-6",
+    "name": "Seed Sensations Seven Seeds",
+    "brand": "Hovis",
+    "category": "Bakery",
+    "quantity": "800g",
+    "allergens": [
+      "gluten",
+      "soybeans"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "kashrut division of the london beth din",
+      "kosher",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 2.2,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "breads-7",
+    "name": "Original Crumpets",
+    "brand": "Warburtons",
+    "category": "Bakery",
+    "quantity": "6",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [
+      "eggs",
+      "milk",
+      "sesame seeds",
+      "soybeans"
+    ],
+    "dietaryLabels": [
+      "Tetra",
+      "halal",
+      "halal food authority",
+      "kashrut division of the london beth din",
+      "kosher",
+      "vegetarian",
+      "vegetarian society"
+    ],
+    "nutriScore": "C",
+    "retailer": "Tesco",
+    "price": 1.25,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "breads-8",
+    "name": "Rye and Mixed Seed Sourdough Bread",
+    "brand": "finest",
+    "category": "Bakery",
+    "quantity": "400 g",
+    "allergens": [
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 2.0,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "eggs-0",
+    "name": "Free range British eggs",
+    "brand": "Tesco",
+    "category": "Dairy",
+    "quantity": "12 x 55g",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "british lion quality",
+      "rspca assured"
+    ],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 3.15,
+    "rating": 4.6,
+    "offer": null
+  },
+  {
+    "id": "eggs-1",
+    "name": "Picnic Eggs",
+    "brand": "Quorn",
+    "category": "Dairy",
+    "quantity": "140 g",
+    "allergens": [
+      "eggs",
+      "gluten"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "vegetarian society approved"
+    ],
+    "nutriScore": "B",
+    "retailer": "Sainsbury's",
+    "price": 2.0,
+    "rating": 4.0,
+    "offer": null
+  },
+  {
+    "id": "eggs-2",
+    "name": "Large Free Range Eggs",
+    "brand": "Woodcote",
+    "category": "Dairy",
+    "quantity": "12 large eggs",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "british lion quality",
+      "rspca assured"
+    ],
+    "nutriScore": "UNKNOWN",
+    "retailer": "Aldi",
+    "price": 2.65,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "eggs-3",
+    "name": "15 Mixed Sized Free Range Scottish Eggs",
+    "brand": "WOODCOTE",
+    "category": "Dairy",
+    "quantity": "15",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "british lion quality",
+      "rspca assured"
+    ],
+    "nutriScore": "A",
+    "retailer": "Aldi",
+    "price": 3.1,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "eggs-4",
+    "name": "Organic Eggs",
+    "brand": "Purely Organic",
+    "category": "Dairy",
+    "quantity": "10",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "british lion quality",
+      "eu organic",
+      "gb org 02",
+      "organic",
+      "rspca assured"
+    ],
+    "nutriScore": "UNKNOWN",
+    "retailer": "Sainsbury's",
+    "price": 3.5,
+    "rating": 4.5,
+    "offer": null
+  },
+  {
+    "id": "eggs-5",
+    "name": "12 British Free Range Eggs Medium",
+    "brand": "Sainsbury's",
+    "category": "Dairy",
+    "quantity": "12",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "Class A",
+      "british lion quality",
+      "free range",
+      "free range eggs"
+    ],
+    "nutriScore": "A",
+    "retailer": "Sainsbury's",
+    "price": 2.95,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "eggs-6",
+    "name": "12 Medium Eggs",
+    "brand": "Merevale",
+    "category": "Dairy",
+    "quantity": "0.0",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "british lion quality",
+      "rspca assured"
+    ],
+    "nutriScore": "A",
+    "retailer": "Aldi",
+    "price": 2.1,
+    "rating": 4.1,
+    "offer": "Save 20%"
+  },
+  {
+    "id": "eggs-7",
+    "name": "EGG PROTEIN POT",
+    "brand": "TESCO",
+    "category": "Dairy",
+    "quantity": "90 g",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [],
+    "dietaryLabels": [],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 1.75,
+    "rating": 3.9,
+    "offer": null
+  },
+  {
+    "id": "eggs-8",
+    "name": "British Free Range Eggs",
+    "brand": "Sainsbury's",
+    "category": "Dairy",
+    "quantity": "6",
+    "allergens": [
+      "eggs"
+    ],
+    "traces": [
+      "eggs"
+    ],
+    "dietaryLabels": [
+      "british lion quality",
+      "free range",
+      "free range eggs",
+      "high proteins",
+      "rspca assured",
+      "source of proteins"
+    ],
+    "nutriScore": "A",
+    "retailer": "Sainsbury's",
+    "price": 1.7,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "yogurts-0",
+    "name": "Creamy Greek Style Natural Yogurt",
+    "brand": "Milbona",
+    "category": "Dairy",
+    "quantity": "1kg",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "source of proteins",
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Aldi",
+    "price": 1.85,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "yogurts-1",
+    "name": "Fermented Coconut Yoghurt Alternative",
+    "brand": "The Coconut Collab",
+    "category": "Dairy",
+    "quantity": "350 g",
+    "allergens": [],
+    "traces": [
+      "nuts"
+    ],
+    "dietaryLabels": [
+      "low or no sugar",
+      "low sugar",
+      "made in france",
+      "no added sugar",
+      "no artificial flavors",
+      "no artificial sweeteners",
+      "no milk",
+      "no palm oil",
+      "no preservatives",
+      "no soy",
+      "plant based",
+      "the vegan society",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutriScore": "E",
+    "retailer": "Sainsbury's",
+    "price": 3.2,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "yogurts-2",
+    "name": "Total 0% fat",
+    "brand": "FAGE",
+    "category": "Dairy",
+    "quantity": "450 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "calcium source",
+      "low or no fat",
+      "no added sugar",
+      "no additives",
+      "no fat",
+      "no gluten",
+      "no preservatives",
+      "vegetarian",
+      "vegetarian society"
+    ],
+    "nutriScore": "A",
+    "retailer": "Tesco",
+    "price": 2.6,
+    "rating": 4.6,
+    "offer": null
+  },
+  {
+    "id": "yogurts-3",
+    "name": "Total 5% Fat Greek Yogurt",
+    "brand": "FAGE",
+    "category": "Dairy",
+    "quantity": "450 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [
+      "milk"
+    ],
+    "dietaryLabels": [
+      "green dot",
+      "no palm oil",
+      "vegetarian society approved"
+    ],
+    "nutriScore": "B",
+    "retailer": "Tesco",
+    "price": 2.6,
+    "rating": 4.5,
+    "offer": "2 for £4.50"
+  },
+  {
+    "id": "yogurts-4",
+    "name": "Greek 0% Fat Authentic Greek Yogurt",
+    "brand": "Brooklea",
+    "category": "Dairy",
+    "quantity": "500g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "High in protein",
+      "low or no fat",
+      "no fat",
+      "vegetarian"
+    ],
+    "nutriScore": "A",
+    "retailer": "Aldi",
+    "price": 1.29,
+    "rating": 4.3,
+    "offer": null
+  },
+  {
+    "id": "yogurts-5",
+    "name": "Skyr Natural Fat Free Icelandic Style Yogurt",
+    "brand": "Arla",
+    "category": "Dairy",
+    "quantity": "450 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "No Artificial Flavour & Colour",
+      "high proteins",
+      "low or no fat",
+      "low or no sugar",
+      "low sugar",
+      "no fat",
+      "reduced sugar",
+      "source of proteins"
+    ],
+    "nutriScore": "A",
+    "retailer": "Sainsbury's",
+    "price": 2.3,
+    "rating": 4.4,
+    "offer": null
+  },
+  {
+    "id": "yogurts-6",
+    "name": "Greek 10% fat authentic yogurt",
+    "brand": "Brooklea",
+    "category": "Dairy",
+    "quantity": "500g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "source of proteins",
+      "vegetarian"
+    ],
+    "nutriScore": "C",
+    "retailer": "Aldi",
+    "price": 1.35,
+    "rating": 4.2,
+    "offer": null
+  },
+  {
+    "id": "yogurts-7",
+    "name": "Total 0% Fat",
+    "brand": "FAGE",
+    "category": "Dairy",
+    "quantity": "950g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "green dot",
+      "vegetarian society approved"
+    ],
+    "nutriScore": "A",
+    "retailer": "Sainsbury's",
+    "price": 4.0,
+    "rating": 4.6,
+    "offer": null
+  },
+  {
+    "id": "yogurts-8",
+    "name": "Greek style natural yoghurt",
+    "brand": "Yeo Valley",
+    "category": "Dairy",
+    "quantity": "450 g",
+    "allergens": [
+      "milk"
+    ],
+    "traces": [],
+    "dietaryLabels": [
+      "eu organic",
+      "gb org 05",
+      "no added sugar",
+      "no gluten",
+      "organic"
+    ],
+    "nutriScore": "C",
+    "retailer": "Tesco",
+    "price": 2.75,
+    "rating": 4.5,
+    "offer": null
+  }
+]
