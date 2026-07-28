@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalise your shopping</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="setup">
+    <header class="setup-header">
+      <span class="step-badge">02</span>
+      <h2>Personaliser</h2>
+    </header>
+
+    <h1>Quick setup</h1>
+
+    <div class="progress-bar">
+      <span class="segment" data-segment="1"></span>
+      <span class="segment" data-segment="2"></span>
+      <span class="segment" data-segment="3"></span>
+    </div>
+
+    <section class="question-group" id="allergens-group">
+      <div class="question-bubble">Any allergens to avoid?</div>
+      <div class="chips" id="allergen-chips">
+        <button type="button" class="chip" data-value="Milk">Milk</button>
+        <button type="button" class="chip" data-value="Peanuts">Peanuts</button>
+        <button type="button" class="chip" data-value="Gluten">Gluten</button>
+        <button type="button" class="chip" data-value="Eggs">Eggs</button>
+        <button type="button" class="chip" data-value="Soy">Soy</button>
+        <button type="button" class="chip" data-value="Shellfish">Shellfish</button>
+        <button type="button" class="chip" data-value="None">None</button>
+        <button type="button" class="chip" data-other="allergens">Other</button>
+      </div>
+      <input type="text" class="other-input" id="allergens-other" placeholder="Type an allergen and press Enter" style="display:none;">
+    </section>
+
+    <section class="question-group" id="dietary-group">
+      <div class="question-bubble">Any dietary preference?</div>
+      <div class="chips" id="dietary-chips">
+        <button type="button" class="chip" data-value="Vegetarian">Vegetarian</button>
+        <button type="button" class="chip" data-value="Vegan">Vegan</button>
+        <button type="button" class="chip" data-value="None">None</button>
+        <button type="button" class="chip" data-other="dietary">Other</button>
+      </div>
+      <input type="text" class="other-input" id="dietary-other" placeholder="Type your dietary preference" style="display:none;">
+    </section>
+
+    <section class="question-group" id="budget-group">
+      <div class="question-bubble">What's your budget?</div>
+      <div class="budget-value" id="budget-value">$100</div>
+      <input type="range" class="budget-slider" id="budget-slider" min="20" max="500" step="10" value="100">
+      <div class="budget-range-labels">
+        <span>$20</span>
+        <span>$500</span>
+      </div>
+    </section>
+
+    <footer class="setup-footer">
+      <button type="button" class="btn-primary disabled" id="continue-btn" disabled>Continue</button>
+    </footer>
+  </div>
+
+  <script src="js/personaliser.js"></script>
+</body>
+</html>
