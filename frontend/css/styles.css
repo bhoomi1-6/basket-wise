@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ece3d3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+.landing {
+  width: 100%;
+  max-width: 420px;
+  padding: 64px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon-badge {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #bd7148;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.icon-badge svg {
+  width: 32px;
+  height: 32px;
+  fill: #ece3d3;
+}
+
+.landing h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b6459;
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 999px;
+  background: #bd7148;
+  color: #fdf9f2;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #a8623d;
+}
+
+.no-signup {
+  align-self: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #8a8377;
+}
