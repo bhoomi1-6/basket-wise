@@ -18,11 +18,18 @@ def _normalize(value: str) -> str:
 def _has_allergen_conflict(product: Dict[str, Any], user_allergens: List[str]) -> bool:
     """
     True if the product's declared allergens OR trace warnings ("may
-    contain") intersect with anything the user needs to avoid.
+    contain") intersect with anything the user needs to avoid, OR the
+    thing to avoid literally appears in the product name.
 
     Traces are included deliberately — a "may contain nuts" warning is
     still unsafe for someone with a nut allergy, even though it's a
     lower-confidence label than a direct declared allergen.
+
+    The name check exists for free-text "Other" entries like
+    "tomatoes" — not a real allergen in Open Food Facts' standardized
+    tag vocabulary, so a chip like "Milk"/"Gluten" is caught by the
+    tags above, but a typed-in food avoidance never would be without
+    also checking the name directly.
     """
     if not user_allergens:
         return False
@@ -31,7 +38,28 @@ def _has_allergen_conflict(product: Dict[str, Any], user_allergens: List[str]) -
     product_allergens = {_normalize(a) for a in product.get("allergens", [])}
     product_traces = {_normalize(t) for t in product.get("traces", [])}
 
-    return bool(user_set & (product_allergens | product_traces))
+    if user_set & (product_allergens | product_traces):
+        return True
+
+    product_name = _normalize(product.get("name", ""))
+    return any(_text_contains_term(product_name, allergen) for allergen in user_set)
+
+
+def _text_contains_term(text: str, term: str) -> bool:
+    """
+    Substring match with basic singular/plural handling, so a typed
+    "tomatoes" still catches a product named "Tomato & Basil" — plain
+    substring matching alone misses that because they differ by more
+    than just a trailing "s". Shared by the allergen name-check and
+    the custom dietary-preference label-check below.
+    """
+    variants = {term}
+    if term.endswith("es") and len(term) > 3:
+        variants.add(term[:-2])  # tomatoes -> tomato
+    if term.endswith("s") and len(term) > 3:
+        variants.add(term[:-1])  # eggs -> egg
+
+    return any(variant in text for variant in variants)
 
 
 def _matches_dietary_preference(product: Dict[str, Any], preference: str) -> bool:
@@ -52,9 +80,13 @@ def _matches_dietary_preference(product: Dict[str, Any], preference: str) -> boo
     if pref == "vegetarian":
         return "vegetarian" in labels or "vegan" in labels
 
-    # Unrecognized/custom preference (e.g. "other") — don't block on it,
-    # since we can't confidently evaluate it against the label set.
-    return True
+    # Custom/typed preference (e.g. "halal", "organic", "gluten free") —
+    # not one of our two hardcoded values, so require it to appear
+    # somewhere in the product's dietary labels. Previously any custom
+    # preference passed every product through unfiltered, which meant
+    # typing something like "halal" had no filtering effect at all.
+    labels_text = " ".join(labels)
+    return _text_contains_term(labels_text, pref)
 
 
 def filter_products(
