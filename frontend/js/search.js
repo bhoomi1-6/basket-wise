@@ -35,7 +35,8 @@
     results.forEach((product) => {
       const li = document.createElement("li");
       li.className = "suggestion-row";
-      li.textContent = `${product.name} — ${product.brand}`;
+      const qty = product.quantity ? ` (${product.quantity})` : "";
+      li.textContent = `${product.name}${qty} — ${product.brand}`;
       li.addEventListener("click", () => {
         searchInput.value = product.name;
         hideSuggestions();

@@ -49,7 +49,8 @@
 
     const meta = document.createElement("div");
     meta.className = "pick-meta";
-    meta.textContent = `${product.brand} · ${product.retailer} · £${product.price.toFixed(2)} · ${product.rating}★`;
+    const qty = product.quantity ? ` · ${product.quantity}` : "";
+    meta.textContent = `${product.brand} · ${product.retailer} · £${product.price.toFixed(2)} · ${product.rating}★${qty}`;
 
     card.appendChild(name);
     card.appendChild(meta);

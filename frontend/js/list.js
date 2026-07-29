@@ -44,7 +44,8 @@
 
       const meta = document.createElement("div");
       meta.className = "item-store";
-      meta.textContent = `${item.retailer} · £${item.price.toFixed(2)}`;
+      const qty = item.quantity ? ` · ${item.quantity}` : "";
+      meta.textContent = `${item.retailer} · £${item.price.toFixed(2)}${qty}`;
 
       info.appendChild(name);
       info.appendChild(meta);
@@ -71,6 +72,7 @@
       brand: product.brand,
       retailer: product.retailer,
       price: product.price,
+      quantity: product.quantity,
       checked: false
     });
     render();

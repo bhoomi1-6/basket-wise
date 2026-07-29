@@ -16,13 +16,9 @@ from services.filter_products import filter_products
 from services.rank_products import rank_products, compute_weights
 from services.justify import generate_justification
 from services.llm_client import generate_text
+from services.text_match import matches_query
 
 router = APIRouter()
-
-
-def _matches_search_term(product: dict, search_term: str) -> bool:
-    """Simple case-insensitive substring match on product name."""
-    return search_term.strip().lower() in product["name"].lower()
 
 
 def build_justification_prompt(product: dict, favors: str, remaining_budget: float) -> str:
@@ -84,7 +80,7 @@ def run_recommendation(request: RecommendRequest) -> RecommendResponse:
     """
     products = load_products()
 
-    matches = [p for p in products if _matches_search_term(p, request.searchTerm)]
+    matches = [p for p in products if matches_query(p, request.searchTerm)]
 
     # Independent re-filter — never trust an earlier /filter call.
     safe_matches = filter_products(
