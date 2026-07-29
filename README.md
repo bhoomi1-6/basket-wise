@@ -40,7 +40,7 @@ backend/            FastAPI
 ├── routes/         /filter, /recommend, /search, /quantity, /meal-plan
 ├── services/        filter_products.py, rank_products.py, llm_client.py
 ├── models/          Pydantic schemas
-└── data/            products.json (90 mock products)
+└── data/            products.json (144 mock products)
 ```
 
 **AI does judgement, not retrieval.** Safety filtering and budget/rating
