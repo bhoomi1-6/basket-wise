@@ -25,6 +25,7 @@ class RecommendRequest(BaseModel):
     searchTerm: str
     profile: UserProfile
     remainingBudget: float
+    retailer: Optional[str] = "All"
 
 class RecommendResponse(BaseModel):
     # Optional: an empty safe-matches result is a valid outcome (e.g. every

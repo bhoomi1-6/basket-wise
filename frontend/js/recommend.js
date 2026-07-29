@@ -16,6 +16,7 @@
   const alternativesEl = document.getElementById("alternatives");
   const searchInput = document.getElementById("search-input");
   const suggestionsList = document.getElementById("suggestions");
+  const retailerSelect = document.getElementById("retailer-select");
 
   function showMessage(text) {
     resultsSection.style.display = "block";
@@ -126,12 +127,13 @@
     }
 
     const remainingBudget = window.Budget.getRemainingBudget(window.Cart.getTotal());
+    const retailer = retailerSelect.value;
 
     try {
       const res = await fetch(`${API_BASE}/recommend`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ searchTerm, profile, remainingBudget })
+        body: JSON.stringify({ searchTerm, profile, remainingBudget, retailer })
       });
 
       if (!res.ok) throw new Error(`/recommend returned ${res.status}`);

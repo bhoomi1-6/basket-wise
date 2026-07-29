@@ -80,6 +80,9 @@ def run_recommendation(request: RecommendRequest) -> RecommendResponse:
     """
     products = load_products()
 
+    if request.retailer and request.retailer != "All":
+        products = [p for p in products if p["retailer"] == request.retailer]
+
     matches = [p for p in products if matches_query(p, request.searchTerm)]
 
     # Independent re-filter — never trust an earlier /filter call.
