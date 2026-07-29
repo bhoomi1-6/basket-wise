@@ -27,7 +27,6 @@ and `docs/architecture-notes.md`.
 - **AI recommendation justification** — one-line reasoning per pick, via
   AWS Bedrock (Claude Haiku 4.5), with a rule-based fallback if the AI
   call fails
-- **Quantity assistant** — opt-in, AI-powered "how much do I need"
 - **Meal-prompt** — "vegetarian curry for 4" auto-populates a full,
   safety-filtered, budget-aware shopping list using the same underlying
   recommendation engine as manual search
