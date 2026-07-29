@@ -229,16 +229,16 @@ body {
 }
 
 .budget-currency {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
   color: #45403a;
 }
 
 .budget-input {
   border: none;
   background: transparent;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
   color: #1a1a1a;
   width: 120px;
 }
