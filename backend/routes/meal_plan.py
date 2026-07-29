@@ -11,7 +11,7 @@ ranking, or justification itself, so there's exactly one place
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from models.schemas import UserProfile, RecommendRequest, RecommendResponse
+from models.schemas import UserProfile, RecommendRequest, Product
 from services.llm_client import generate_text
 from routes.recommend import run_recommendation
 
@@ -21,15 +21,27 @@ router = APIRouter()
 # a meal plan has no single "remaining budget" concept of its own yet.
 DEFAULT_INGREDIENT_BUDGET = 10.0
 
+NOT_IN_CATALOG_NOTE = "Not in our current catalog — add manually"
+
 
 class MealPlanRequest(BaseModel):
     dish: str
     profile: UserProfile
 
 
+class MealPlanItem(BaseModel):
+    # One row per ingredient, always — an ingredient with no safe/matching
+    # product is never dropped, just marked matched=False with a note, so
+    # the shopper's list can never silently lose an item.
+    ingredient: str
+    matched: bool
+    product: Product | None = None
+    justification: str | None = None
+    note: str | None = None
+
+
 class MealPlanResponse(BaseModel):
-    ingredients: list[str]
-    recommendations: list[RecommendResponse]
+    items: list[MealPlanItem]
     message: str | None = None
 
 
@@ -57,22 +69,34 @@ def meal_plan(request: MealPlanRequest) -> MealPlanResponse:
 
     if not ai_text:
         return MealPlanResponse(
-            ingredients=[],
-            recommendations=[],
+            items=[],
             message="AI meal planning is temporarily unavailable — please try again shortly.",
         )
 
     ingredients = [item.strip() for item in ai_text.split(",") if item.strip()]
 
-    recommendations = [
-        run_recommendation(
+    items = []
+    for ingredient in ingredients:
+        recommendation = run_recommendation(
             RecommendRequest(
                 searchTerm=ingredient,
                 profile=request.profile,
                 remainingBudget=DEFAULT_INGREDIENT_BUDGET,
             )
         )
-        for ingredient in ingredients
-    ]
 
-    return MealPlanResponse(ingredients=ingredients, recommendations=recommendations)
+        if recommendation.topPick:
+            items.append(MealPlanItem(
+                ingredient=ingredient,
+                matched=True,
+                product=recommendation.topPick,
+                justification=recommendation.justification,
+            ))
+        else:
+            items.append(MealPlanItem(
+                ingredient=ingredient,
+                matched=False,
+                note=NOT_IN_CATALOG_NOTE,
+            ))
+
+    return MealPlanResponse(items=items)

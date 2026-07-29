@@ -87,7 +87,7 @@
       addBtn.textContent = "Add to list";
       addBtn.addEventListener("click", () => {
         window.Cart.add(product);
-        clearSearchUI();
+        (options.onAdded || clearSearchUI)(card);
       });
     }
 
@@ -142,5 +142,8 @@
     }
   }
 
-  window.Recommend = { search, hideResults };
+  // createProductCard is exposed so meal-plan.js can render matched
+  // ingredients with the exact same card — one product card design
+  // for the whole app, not a second one for meal plans.
+  window.Recommend = { search, hideResults, createProductCard: productCard };
 })();

@@ -56,9 +56,33 @@
     </section>
   </div>
 
+  <div class="toast" id="toast" style="display:none;"></div>
+
+  <button type="button" class="meal-assistant-fab" id="meal-assistant-fab" aria-label="Open meal assistant">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 2a1 1 0 0 1 1 1v2.06a5 5 0 0 1 4 4.94v1a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1h-1.17A6 6 0 0 1 12 20a6 6 0 0 1-4.83-4H6a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2v-1a5 5 0 0 1 4-4.94V3a1 1 0 0 1 1-1Z" fill="currentColor"/>
+    </svg>
+  </button>
+
+  <div class="meal-assistant-panel" id="meal-assistant-panel" style="display:none;">
+    <div class="meal-assistant-header">
+      <h3>Meal Assistant</h3>
+      <button type="button" class="meal-assistant-close" id="meal-assistant-close" aria-label="Close meal assistant">×</button>
+    </div>
+
+    <label class="meal-plan-label" for="meal-plan-input">What are you cooking?</label>
+    <div class="meal-plan-field">
+      <input type="text" id="meal-plan-input" placeholder="e.g. vegetarian curry for 4" autocomplete="off">
+      <button type="button" id="meal-plan-btn" class="btn-add">Generate list</button>
+    </div>
+    <p class="meal-plan-status" id="meal-plan-status" style="display:none;"></p>
+    <div class="meal-plan-results" id="meal-plan-results"></div>
+  </div>
+
   <script src="js/budget.js"></script>
   <script src="js/list.js"></script>
   <script src="js/search.js"></script>
   <script src="js/recommend.js"></script>
+  <script src="js/meal-plan.js"></script>
 </body>
 </html>

@@ -605,3 +605,140 @@ body {
   color: #8a8377;
   cursor: not-allowed;
 }
+
+/* ---- Meal plan ---- */
+
+.meal-plan-row {
+  margin-bottom: 28px;
+}
+
+.meal-plan-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #45403a;
+  margin-bottom: 8px;
+}
+
+.meal-plan-field {
+  display: flex;
+  gap: 10px;
+}
+
+.meal-plan-field input {
+  flex: 1;
+  border: none;
+  background: #e2d8c6;
+  border-radius: 999px;
+  padding: 14px 18px;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.meal-plan-field input:focus {
+  outline: none;
+}
+
+.meal-plan-status {
+  font-size: 13px;
+  color: #8a8377;
+  margin-top: 10px;
+}
+
+.meal-plan-results {
+  margin-top: 16px;
+}
+
+.meal-plan-results .pick-card,
+.meal-plan-results .alt-card {
+  margin-bottom: 12px;
+}
+
+.unmatched-card {
+  background: transparent;
+  border: 1.5px dashed #c9bfae;
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+
+.unmatched-note {
+  font-size: 13px;
+  color: #8a8377;
+  margin-bottom: 10px;
+}
+
+.meal-assistant-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #bd7148;
+  color: #fdf9f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.meal-assistant-fab:hover {
+  background: #a8623d;
+}
+
+.meal-assistant-panel {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 100%;
+  max-width: 360px;
+  max-height: min(80vh, 640px);
+  overflow-y: auto;
+  background: #fdf9f2;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  z-index: 60;
+}
+
+.meal-assistant-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.meal-assistant-header h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+.meal-assistant-close {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #8a8377;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.meal-assistant-close:hover {
+  color: #45403a;
+}
+
+@media (max-width: 480px) {
+  .meal-assistant-panel {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: none;
+    width: auto;
+  }
+}
