@@ -15,9 +15,10 @@
   let nextId = 1;
 
   function getTotal() {
-    return items
-      .filter((item) => !item.checked)
-      .reduce((sum, item) => sum + item.price, 0);
+    // Checked = "picked up", not "no longer buying" — it must keep
+    // counting against the budget. Only removing an item (the × button)
+    // should change the total.
+    return items.reduce((sum, item) => sum + item.price, 0);
   }
 
   function render() {
