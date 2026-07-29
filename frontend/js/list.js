@@ -1,11 +1,24 @@
+/**
+ * list.js
+ *
+ * The shopping list / cart state for this session. In-memory only (no
+ * localStorage) — a fresh cart per visit is fine for this demo, and it
+ * keeps "what's in the cart" simple to reason about live. Exposed as
+ * window.Cart so recommend.js can add products without this file
+ * needing to know anything about search or recommendations.
+ */
 (function () {
-  const itemInput = document.getElementById("item-input");
-  const storeSelect = document.getElementById("store-select");
   const itemList = document.getElementById("item-list");
   const emptyState = document.getElementById("empty-state");
 
-  let items = [];
+  let items = []; // { id, name, brand, retailer, price, checked }
   let nextId = 1;
+
+  function getTotal() {
+    return items
+      .filter((item) => !item.checked)
+      .reduce((sum, item) => sum + item.price, 0);
+  }
 
   function render() {
     itemList.innerHTML = "";
@@ -14,7 +27,6 @@
     items.forEach((item) => {
       const li = document.createElement("li");
       li.className = "item-row" + (item.checked ? " checked" : "");
-      li.dataset.id = item.id;
 
       const checkbox = document.createElement("button");
       checkbox.type = "button";
@@ -29,12 +41,12 @@
       name.className = "item-name";
       name.textContent = item.name;
 
-      const store = document.createElement("div");
-      store.className = "item-store";
-      store.textContent = "Store " + item.store;
+      const meta = document.createElement("div");
+      meta.className = "item-store";
+      meta.textContent = `${item.retailer} · £${item.price.toFixed(2)}`;
 
       info.appendChild(name);
-      info.appendChild(store);
+      info.appendChild(meta);
 
       const remove = document.createElement("button");
       remove.type = "button";
@@ -47,25 +59,24 @@
       li.appendChild(remove);
       itemList.appendChild(li);
     });
+
+    window.Budget.render(getTotal());
   }
 
-  function addItem(name) {
-    const trimmed = name.trim();
-    if (!trimmed) return;
-
+  function add(product) {
     items.push({
       id: nextId++,
-      name: trimmed,
-      store: storeSelect.value,
+      name: product.name,
+      brand: product.brand,
+      retailer: product.retailer,
+      price: product.price,
       checked: false
     });
     render();
   }
 
   function toggleChecked(id) {
-    items = items.map((item) =>
-      item.id === id ? { ...item, checked: !item.checked } : item
-    );
+    items = items.map((item) => (item.id === id ? { ...item, checked: !item.checked } : item));
     render();
   }
 
@@ -74,12 +85,7 @@
     render();
   }
 
-  itemInput.addEventListener("keydown", (e) => {
-    if (e.key !== "Enter") return;
-    e.preventDefault();
-    addItem(itemInput.value);
-    itemInput.value = "";
-  });
+  window.Cart = { add, removeItem, toggleChecked, getTotal, render };
 
   render();
 })();

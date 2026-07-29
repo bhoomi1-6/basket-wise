@@ -1,4 +1,6 @@
 (function () {
+  const API_BASE = "http://localhost:8000";
+
   const state = {
     allergens: new Set(),
     dietary: null,
@@ -13,6 +15,13 @@
   const budgetValue = document.getElementById("budget-value");
   const continueBtn = document.getElementById("continue-btn");
   const segments = document.querySelectorAll(".progress-bar .segment");
+
+  const modal = document.getElementById("filter-modal");
+  const modalAllergens = document.getElementById("modal-allergens");
+  const modalCount = document.getElementById("modal-count");
+  const modalBudget = document.getElementById("modal-budget");
+  const modalDismiss = document.getElementById("modal-dismiss");
+  const toast = document.getElementById("toast");
 
   function updateProgress() {
     segments[0].classList.toggle("done", state.allergens.size > 0);
@@ -133,19 +142,66 @@
     budgetValue.textContent = "$" + state.budget;
   });
 
-  // --- Continue ---
-  continueBtn.addEventListener("click", () => {
-    if (continueBtn.disabled) return;
+  // --- Continue: confirm the profile with /filter, then hand off to shop.html ---
 
-    const profile = {
+  function buildProfile() {
+    return {
       allergens: Array.from(state.allergens),
-      dietary: state.dietary,
+      dietaryPreference: state.dietary,
       budget: state.budget
     };
+  }
 
+  function goToShop(profile) {
     localStorage.setItem("basketwise_profile", JSON.stringify(profile));
-    window.location.href = "list.html";
-  });
+    window.location.href = "shop.html";
+  }
+
+  function showFilterModal(profile, result) {
+    const allergensText = profile.allergens.length ? profile.allergens.join(", ") : "nothing";
+    modalAllergens.textContent = `Excluded products with: ${allergensText}`;
+    modalCount.textContent = `${result.safeCount} of ${result.safeCount + result.excludedCount} products available`;
+    modalBudget.textContent = `Budget-aware recommendations are now active for £${profile.budget}`;
+    modal.style.display = "flex";
+
+    modalDismiss.onclick = () => {
+      modal.style.display = "none";
+      goToShop(profile);
+    };
+  }
+
+  function showToastAndContinue(profile, message) {
+    toast.textContent = message;
+    toast.style.display = "block";
+    setTimeout(() => goToShop(profile), 900);
+  }
+
+  async function handleContinue() {
+    if (continueBtn.disabled) return;
+    continueBtn.disabled = true;
+
+    const profile = buildProfile();
+
+    // /filter is a confirmation nicety, not a dependency — /recommend
+    // independently re-filters on every real search regardless, so a
+    // failure here must never block the user from reaching the shop.
+    try {
+      const res = await fetch(`${API_BASE}/filter`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ profile })
+      });
+
+      if (!res.ok) throw new Error(`/filter returned ${res.status}`);
+
+      const result = await res.json();
+      showFilterModal(profile, result);
+    } catch (err) {
+      showToastAndContinue(profile, "Personalization saved locally");
+    }
+  }
+
+  continueBtn.addEventListener("click", handleContinue);
 
   updateProgress();
 })();

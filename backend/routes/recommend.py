@@ -25,20 +25,32 @@ def _matches_search_term(product: dict, search_term: str) -> bool:
     return search_term.strip().lower() in product["name"].lower()
 
 
-def build_justification_prompt(product: dict, favors: str) -> str:
+def build_justification_prompt(product: dict, favors: str, remaining_budget: float) -> str:
     """
     One clear, constrained ask: a single sentence, under 20 words,
     grounded in the actual product facts and in *why* the ranker
     picked it (rating-led vs. price-led) — kept separate from the
     calling code so it's easy to read and explain on its own.
+
+    Remaining budget is passed in explicitly and the model is told to
+    flag it if the price goes over — ranking can still surface an
+    over-budget item when it's the only safe match, so the sentence
+    shown to the user must never quietly hide that.
     """
+    over_budget = product["price"] > remaining_budget
+    budget_note = (
+        f"This price is OVER the user's remaining budget of £{remaining_budget:.2f} — "
+        "you MUST clearly say it exceeds the budget."
+        if over_budget
+        else f"This fits within the user's remaining budget of £{remaining_budget:.2f}."
+    )
     return (
         "You are a shopping assistant. In ONE sentence, under 20 words, "
         "explain in a natural, human tone why this product was recommended. "
         f"Product: {product['name']} by {product['brand']}, sold at "
         f"{product['retailer']} for £{product['price']:.2f}, rated "
         f"{product['rating']}/5. The recommendation mainly favored "
-        f"{favors}. Reply with only the sentence, no preamble."
+        f"{favors}. {budget_note} Reply with only the sentence, no preamble."
     )
 
 
@@ -48,18 +60,19 @@ def get_justification(top_pick: dict, safe_matches: list, remaining_budget: floa
     unavailable (generate_text returns None — timeout, bad creds,
     throttling, anything), silently falls back to the existing
     rule-based justification so the endpoint never returns a missing
-    or broken explanation.
+    or broken explanation. Both paths are budget-aware — see
+    build_justification_prompt and generate_justification.
     """
     prices = [p["price"] for p in safe_matches]
     rating_weight, price_weight = compute_weights(remaining_budget, prices)
     favors = "rating" if rating_weight >= price_weight else "price"
 
-    prompt = build_justification_prompt(top_pick, favors)
+    prompt = build_justification_prompt(top_pick, favors, remaining_budget)
     ai_text = generate_text(prompt, max_tokens=60)
 
     if ai_text:
         return ai_text
-    return generate_justification(safe_matches, remaining_budget)
+    return generate_justification(top_pick, safe_matches, remaining_budget)
 
 
 def run_recommendation(request: RecommendRequest) -> RecommendResponse:

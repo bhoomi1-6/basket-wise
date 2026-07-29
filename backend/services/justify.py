@@ -10,12 +10,23 @@ from typing import List, Dict, Any
 from services.rank_products import compute_weights
 
 
-def generate_justification(products: List[Dict[str, Any]], remaining_budget: float) -> str:
+def generate_justification(
+    top_pick: Dict[str, Any],
+    products: List[Dict[str, Any]],
+    remaining_budget: float,
+) -> str:
     """
-    Rule-based stand-in for an LLM explanation. Reuses the same
-    rating/price weighting that ranked the list, so the justification
-    text always agrees with why the top pick actually won.
+    Rule-based stand-in for an LLM explanation. Checked first: does the
+    top pick actually fit what's left of the budget? Ranking never hard
+    -excludes over-budget items (there may be no cheaper safe option),
+    so the justification is the one place that must say so plainly —
+    silently recommending something the user can't actually afford
+    would be misleading, not "budget-aware".
     """
+    if top_pick["price"] > remaining_budget:
+        over_by = top_pick["price"] - remaining_budget
+        return f"Best safe match, but £{over_by:.2f} over your remaining budget"
+
     prices = [p["price"] for p in products]
     rating_weight, price_weight = compute_weights(remaining_budget, prices)
 
