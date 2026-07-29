@@ -64,6 +64,7 @@
 
     if (!term) {
       hideSuggestions();
+      window.Recommend.hideResults();
       return;
     }
 

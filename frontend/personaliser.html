@@ -49,11 +49,9 @@
 
     <section class="question-group" id="budget-group">
       <div class="question-bubble">What's your budget?</div>
-      <div class="budget-value" id="budget-value">$100</div>
-      <input type="range" class="budget-slider" id="budget-slider" min="20" max="500" step="10" value="100">
-      <div class="budget-range-labels">
-        <span>$20</span>
-        <span>$500</span>
+      <div class="budget-input-wrap">
+        <span class="budget-currency">£</span>
+        <input type="number" class="budget-input" id="budget-input" min="0.01" step="1" value="50" inputmode="decimal">
       </div>
     </section>
 
@@ -61,6 +59,18 @@
       <button type="button" class="btn-primary disabled" id="continue-btn" disabled>Continue</button>
     </footer>
   </div>
+
+  <div class="modal-overlay" id="filter-modal" style="display:none;">
+    <div class="modal-card">
+      <h2>Your list is personalized</h2>
+      <p id="modal-allergens"></p>
+      <p id="modal-count"></p>
+      <p id="modal-budget"></p>
+      <button type="button" class="btn-primary" id="modal-dismiss">Got it</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" style="display:none;"></div>
 
   <script src="js/personaliser.js"></script>
 </body>

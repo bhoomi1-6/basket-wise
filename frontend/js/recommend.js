@@ -29,7 +29,14 @@
     searchInput.value = "";
     suggestionsList.style.display = "none";
     suggestionsList.innerHTML = "";
+    hideResults();
+  }
+
+  function hideResults() {
     resultsSection.style.display = "none";
+    resultsMessage.style.display = "none";
+    topPickSlot.innerHTML = "";
+    alternativesEl.innerHTML = "";
   }
 
   function productCard(product, options) {
@@ -134,5 +141,5 @@
     }
   }
 
-  window.Recommend = { search };
+  window.Recommend = { search, hideResults };
 })();

@@ -4,15 +4,14 @@
   const state = {
     allergens: new Set(),
     dietary: null,
-    budget: Number(document.getElementById("budget-slider").value)
+    budget: Number(document.getElementById("budget-input").value)
   };
 
   const allergenChips = document.getElementById("allergen-chips");
   const allergensOther = document.getElementById("allergens-other");
   const dietaryChips = document.getElementById("dietary-chips");
   const dietaryOther = document.getElementById("dietary-other");
-  const budgetSlider = document.getElementById("budget-slider");
-  const budgetValue = document.getElementById("budget-value");
+  const budgetInput = document.getElementById("budget-input");
   const continueBtn = document.getElementById("continue-btn");
   const segments = document.querySelectorAll(".progress-bar .segment");
 
@@ -28,7 +27,7 @@
     segments[1].classList.toggle("done", Boolean(state.dietary));
     segments[2].classList.toggle("done", true);
 
-    const ready = state.allergens.size > 0 && Boolean(state.dietary);
+    const ready = state.allergens.size > 0 && Boolean(state.dietary) && state.budget > 0;
     continueBtn.disabled = !ready;
     continueBtn.classList.toggle("disabled", !ready);
   }
@@ -136,10 +135,10 @@
     updateProgress();
   });
 
-  // --- Budget (slider) ---
-  budgetSlider.addEventListener("input", () => {
-    state.budget = Number(budgetSlider.value);
-    budgetValue.textContent = "$" + state.budget;
+  // --- Budget (number input with spinner arrows, any specific value) ---
+  budgetInput.addEventListener("input", () => {
+    state.budget = Number(budgetInput.value) || 0;
+    updateProgress();
   });
 
   // --- Continue: confirm the profile with /filter, then hand off to shop.html ---
