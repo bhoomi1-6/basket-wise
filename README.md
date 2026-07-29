@@ -89,11 +89,6 @@ Open `http://localhost:5500` in a browser.
 5. Top recommendation shown with AI justification; alternatives below
 6. Add items to list → budget tracker updates live
 
-## What was deliberately scoped out, and why
-
-See `docs/architecture-notes.md` for the full list (live retailer APIs,
-real aisle navigation, full auth, pantry-to-recipe suggestions, etc.) —
-each cut is a documented decision, not an oversight.
 
 ## Tech stack
 
